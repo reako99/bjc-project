@@ -2,8 +2,10 @@
 <html>
     <head>
         <title>$title$</title>
-    </head>
+            </head>
     <body>
+    <p>test</p>
+
     $END$
     </body>
 </html>

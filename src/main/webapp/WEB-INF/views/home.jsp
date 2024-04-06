@@ -5,7 +5,6 @@
             </head>
     <body>
     <p>test</p>
-
-    $END$
+    <button>login</button>
     </body>
 </html>

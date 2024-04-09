@@ -1,0 +1,27 @@
+server:
+  port: 8081
+  servlet:
+    encoding:
+      charset: UTF-8
+      force: true
+      enabled: true
+spring:
+  mvc:
+    view:
+      prefix: /WEB-INF/views/
+      suffix: .jsp
+  datasource:
+    driver-class-name: oracle.jdbc.OracleDriver
+    username: mico
+    password: bjc8221
+    url: jdbc:oracle:thin:@localhost:1521:XE
+  jpa:
+    hibernate:
+      ddl-auto: update
+    generate-ddl: true
+    show-sql: true
+    database: oracle
+logging:
+  level:
+    org:
+      hibernate: info

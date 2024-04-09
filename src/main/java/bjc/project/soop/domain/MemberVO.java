@@ -2,8 +2,10 @@ package bjc.project.soop.domain;
 
 
 import jakarta.persistence.*;
+import lombok.Getter;
 
 @Entity
+@Getter
 @Table(name="members")
 public class MemberVO {
 

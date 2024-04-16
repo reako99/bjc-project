@@ -1,5 +1,6 @@
 package bjc.project.soop.controller;
 
+import bjc.project.soop.domain.MemberVO;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -22,7 +23,9 @@ public class MemberController {
     }
 
     @PostMapping("/register")
-    public String registerPOST(){
+    public String registerPOST(MemberVO vo){
+        System.out.println("MemberController.registerPOST");
+        System.out.println("member = " + vo);
         return "home";
     }
 }

@@ -14,6 +14,7 @@
         <input type="text" name="name" placeholder="이름" required /><br>
         <input type="text" name="phone" placeholder="전화번호" required /><br>
         <input type="text" name="email" placeholder="이메일" required /><br>
+        <input type="text" name="birth" placeholder="생일" required /><br>
         <input type="submit" value="회원가입">
     </form>
     <button id="previousView">이전 페이지</button>

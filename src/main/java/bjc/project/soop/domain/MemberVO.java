@@ -2,11 +2,15 @@ package bjc.project.soop.domain;
 
 
 import jakarta.persistence.*;
-import lombok.Getter;
+import lombok.*;
+import org.hibernate.annotations.ColumnDefault;
 
 @Entity
 @Getter
+@Setter
 @Table(name="members")
+@NoArgsConstructor
+@AllArgsConstructor
 public class MemberVO {
 
     @Id

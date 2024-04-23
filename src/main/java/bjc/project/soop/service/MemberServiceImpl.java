@@ -6,6 +6,8 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.Optional;
+
 @RequiredArgsConstructor
 @Service
 public class MemberServiceImpl implements MemberService{
@@ -14,7 +16,7 @@ public class MemberServiceImpl implements MemberService{
     private final MemberRepository memberRepository;
 
     public MemberVO getMember(String memberId){
-        return new MemberVO();
+        return memberRepository.findById(memberId);
     }
 
 }

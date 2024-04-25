@@ -18,15 +18,16 @@ class BjcProjectApplicationTests {
 
 	@Test
 	void contextLoads() {
+
+		EntityManagerFactory emf = Persistence.createEntityManagerFactory("member");
+		EntityManager em = emf.createEntityManager();
+		EntityTransaction tx = em.getTransaction();
+		tx.begin();
 		MemberVO vo = new MemberVO("test", "test1234","user","Y");
 		System.out.println("id = " + vo.getId());
 		System.out.println("vo.getPassword() = " + vo.getPassword());
 		System.out.println("vo.getRole() = " + vo.getRole());
 		System.out.println("vo.getEnabled() = " + vo.getEnabled());
-		EntityManagerFactory emf = Persistence.createEntityManagerFactory("member");
-		EntityManager em = emf.createEntityManager();
-		EntityTransaction tx = em.getTransaction();
-		tx.begin();
 		em.persist(vo);
 		tx.commit();
 		em.close();

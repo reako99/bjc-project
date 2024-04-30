@@ -32,6 +32,8 @@ class BjcProjectApplicationTests {
 		tx.commit();
 		em.close();
 		emf.close();
+
+
 	}
 
 }

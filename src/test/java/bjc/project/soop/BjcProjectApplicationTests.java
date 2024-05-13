@@ -21,6 +21,7 @@ class BjcProjectApplicationTests {
 
 		EntityManagerFactory emf = Persistence.createEntityManagerFactory("member");
 		EntityManager em = emf.createEntityManager();
+
 		EntityTransaction tx = em.getTransaction();
 		tx.begin();
 		MemberVO vo = new MemberVO("test", "test1234","user","Y");

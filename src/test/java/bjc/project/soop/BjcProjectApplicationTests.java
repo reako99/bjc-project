@@ -18,6 +18,8 @@ class BjcProjectApplicationTests {
 
 	@Test
 	void contextLoads() {
+
+
 		EntityManagerFactory emf = Persistence.createEntityManagerFactory("member");
 		EntityManager em = emf.createEntityManager();
 		EntityTransaction tx = em.getTransaction();
